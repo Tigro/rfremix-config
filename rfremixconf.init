@@ -71,6 +71,12 @@ case "$1" in
 	    fi
 	fi
 
+	# Metacity Default font. Set "Sans Bold 11"
+	if [ -x /usr/bin/gconftool-2 ]; then
+	    /usr/bin/gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults \
+		-s -t string /apps/metacity/general/titlebar_font "Sans Bold 11"
+	fi
+
 	# end of rules
 
         RETVAL=$?
