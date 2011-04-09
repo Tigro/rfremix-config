@@ -1,0 +1,4 @@
+[org.gnome.nautilus.desktop]
+trash-icon-visible=false
+computer-icon-visible=false
+home-icon-visible=false
