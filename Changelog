@@ -1,4 +1,8 @@
 Changelog:
+* Fri Apr 22 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15
+- bump version. One for distribution
+- change smolt config to detect rfremix
+
 * Fri Apr  8 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 0.10.0
 - rules only for RFRemix 15
 - override font. Sans 10 by default
