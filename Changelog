@@ -1,4 +1,9 @@
 Changelog:
+* Tue May 17 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15.1
+- drop restricted schemas
+- drop restricted rules from rfremixconf
+- apply rule 'menus-have-icons'
+
 * Fri Apr 22 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 15
 - bump version. One for distribution
 - change smolt config to detect rfremix
