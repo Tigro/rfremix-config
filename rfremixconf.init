@@ -24,15 +24,6 @@ case "$1" in
     start)
 	echo -n $"Starting $prog: "
 
-	# if KDE is exclusive desktop use KDM istead of GDM
-	if [ -f /usr/share/kde4/apps/kdm/sessions/kde.desktop -a \
-	     -f /usr/bin/kdm -a \
-	     ! -f /usr/share/xsessions/gnome.desktop -a \
-	     ! -f /usr/share/xsessions/LXDE.desktop -a \
-	     ! -f /usr/share/xsessions/xfce4.desktop ]; then
-	    echo "DISPLAYMANAGER=\"KDE\"" > /etc/sysconfig/desktop
-	fi
-
 	# disable services
 	for serv in $(echo "isdn nfs pcscd"); do
 	    if [ -x /etc/init.d/$serv -a -x /sbin/chkconfig ]; then
